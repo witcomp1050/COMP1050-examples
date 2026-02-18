@@ -1,15 +1,14 @@
 package objectsAndClasses;
 
-public class CircleExample {
-	
+public class Circle3 {
 	private double radius = 1.0;
 	
 //
-	public CircleExample() {		
-
+	public Circle3() {
+		this(1.0);		
 	}
 //
-	public CircleExample(double r) { 
+	public Circle3(double r) { 
 		setRadius(r);
 	}
 	
@@ -26,5 +25,6 @@ public class CircleExample {
 	public double getArea() {
 		return Math.PI * radius * radius;
 	}
+
 
 }

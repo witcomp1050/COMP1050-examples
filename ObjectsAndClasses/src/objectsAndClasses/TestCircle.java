@@ -29,10 +29,10 @@ public class TestCircle {
 //////		null pointer exception
 		CircleExample c5 = null;
 ////		
-		System.out.printf("%s%n", c5); 
-		System.out.printf("%d%n", c5.getRadius());// NullPointerException
+//		System.out.printf("%s%n", c5); 
+//		System.out.printf("%d%n", c5.getRadius());// NullPointerException
 ////		
 //		
-//		
+		System.out.println(cA);
 	}
 }
