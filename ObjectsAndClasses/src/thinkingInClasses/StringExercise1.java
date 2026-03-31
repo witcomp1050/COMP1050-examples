@@ -6,13 +6,16 @@ public class StringExercise1 {
 		System.out.printf("%s%n", w);
 		w.replace('e', 'E');
 		System.out.printf("%s%n", w);
-//		
+		String w1 = w.replace('e', 'E');
+		System.out.println(w1);
+////
+//		System.out.println();
 		final String w2 = "Welcome2";		
 		System.out.printf("%s%n", w2);
 		String w3 = w2.replace('e', 'E');
 		System.out.printf("%s%n", w3);
 		System.out.println(w2.replace('e', 'E'));
-
+//
 	}
 
 }
