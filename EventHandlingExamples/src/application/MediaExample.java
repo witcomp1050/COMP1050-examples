@@ -20,6 +20,17 @@ public class MediaExample extends Application {
     @Override
     public void start(Stage primaryStage) {
         Button b = new Button("pause");
+        
+        StackPane sp = new StackPane(b);
+
+        var url = getClass().getResource("/application/america.mp3");
+        if (url == null) {
+            throw new RuntimeException("Could not find /application/america.mp3");
+        }
+//
+        Media media = new Media(url.toExternalForm());
+        player = new MediaPlayer(media);
+        player.play();
 
         b.setOnAction(event -> {
             if (player != null && player.getStatus() == Status.PAUSED) {
@@ -31,16 +42,8 @@ public class MediaExample extends Application {
             }
         });
 
-        StackPane sp = new StackPane(b);
 
-        var url = getClass().getResource("/application/america.mp3");
-        if (url == null) {
-            throw new RuntimeException("Could not find /application/america.mp3");
-        }
-
-        Media media = new Media(url.toExternalForm());
-        player = new MediaPlayer(media);
-        player.play();
+        
 
         primaryStage.setScene(new Scene(sp, 300, 200));
         primaryStage.show();
