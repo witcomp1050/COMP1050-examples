@@ -23,12 +23,12 @@ public class MediaExample extends Application {
         
         StackPane sp = new StackPane(b);
 
-        var url = getClass().getResource("/application/america.mp3");
-        if (url == null) {
+        var loc = getClass().getResource("/application/america.mp3");
+        if (loc == null) {
             throw new RuntimeException("Could not find /application/america.mp3");
         }
 //
-        Media media = new Media(url.toExternalForm());
+        Media media = new Media(loc.toExternalForm());
         player = new MediaPlayer(media);
         player.play();
 

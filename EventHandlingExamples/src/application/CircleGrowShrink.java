@@ -26,31 +26,36 @@ public class CircleGrowShrink extends Application {
 			c.setStroke(Color.BLACK);
 			c.setFill(Color.BLUE);
 			
-			Button grow = new Button("Grow");
+			Button enlarge = new Button("Enlarge");
 			
-//			grow.setOnAction(new EventHandler<ActionEvent>() {
+//			enlarge.setOnAction(new EventHandler<ActionEvent>() {
 //				@Override
 //				public void handle(ActionEvent event) {
 //					c.setRadius(c.getRadius()+3);
 //				}
 //			});
-////			
+//////			
 			
-			grow.setOnAction(e->{
+			enlarge.setOnAction(e->{
 				c.setRadius(c.getRadius()+3);
 			});
 //			
 			Button shrink = new Button("Shrink");
-			shrink.setOnAction(new EventHandler<ActionEvent>() {
-				@Override
-				public void handle(ActionEvent event) {
-					c.setRadius(c.getRadius()-3);
-				}
+//			shrink.setOnAction(new EventHandler<ActionEvent>() {
+//				@Override
+//				public void handle(ActionEvent event) {
+//					c.setRadius(c.getRadius()-3);
+//				}
+//			});
+			
+			
+			shrink.setOnAction(e->{
+				c.setRadius(c.getRadius()-3);
 			});
 
 			HBox hb = new HBox();
-			hb.getChildren().add(grow);
-			hb.getChildren().add(shrink);
+			hb.getChildren().addAll(enlarge, shrink);
+//			hb.getChildren().add(shrink);
 			hb.setSpacing(10);
 			hb.setPadding(new Insets(10));
 			hb.setAlignment(Pos.CENTER);
