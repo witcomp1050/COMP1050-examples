@@ -7,7 +7,7 @@ lists friendly aliases and any notes. Every program was compiled and run on JDK 
 | Folder | Lecture | Programs |
 |---|---|---|
 | [`01-getting-started-with-java/`](01-getting-started-with-java/) | Getting Started with Java | 8 |
-| [`02-java-foundations/`](02-java-foundations/) | Java Foundations | 22 |
+| [`02-java-fundamentals/`](02-java-fundamentals/) | Java Fundamentals | 49 |
 | [`03-methods-arrays-files-tests/`](03-methods-arrays-files-tests/) | Methods, Arrays, File I/O & Unit Tests | 15 |
 | [`04-classes-objects-composition/`](04-classes-objects-composition/) | Classes, Objects, Encapsulation & Composition | 19 |
 | [`05-inheritance-polymorphism-abstract/`](05-inheritance-polymorphism-abstract/) | Inheritance, Polymorphism & Abstract Classes | 11 |
